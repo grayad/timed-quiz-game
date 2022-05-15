@@ -13,9 +13,12 @@ header {
     border: solid 1px;
     padding: 20px;
     margin: 50px;
-    text-align: center;
     font-size: large;
     border-radius: 15px;
+}
+
+.welcome-page {
+    text-align: center;
 }
 
 .start-btn {
@@ -24,9 +27,38 @@ header {
     border-radius: 15px;
 }
 
+.start-btn:hover{
+    background-color: rgba(0, 0, 139, 0.496);
+}
+
 .hide {
     display: none;
 }
+
+.quiz {
+    font-size: 2rem;
+}
+
+.btn {
+    background-color: darkblue;
+    color: white;
+    border-radius: 15px;
+    padding: 2.5px;
+    font-size: 1.11rem;
+    display: block;
+    margin: 10px;
+    border: none;
+}
+
+.options {
+    padding: 15pxpx;
+}
+
+.btn:hover{
+    background-color: rgba(0, 0, 139, 0.496);
+}
+
+
 
 
 
