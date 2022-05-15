@@ -1,3 +1,6 @@
+* {
+    background-color: rgb(168, 215, 244);
+}
 header {
     display: flex;
     align-items: center;
@@ -6,12 +9,23 @@ header {
     padding: 5px;
 }
 
-.quiz {
+.content {
     border: solid 1px;
     padding: 20px;
     margin: 50px;
     text-align: center;
     font-size: large;
+    border-radius: 15px;
+}
+
+.start-btn {
+    background-color: darkblue;
+    color: white;
+    border-radius: 15px;
+}
+
+.hide {
+    display: none;
 }
 
 

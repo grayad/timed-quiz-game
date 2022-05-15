@@ -12,8 +12,9 @@
         <p>View High Scores</p>
         <p>Time Placeholder</p>
     </header>
-    <main>
-        <section class="quiz">
+    <main class="content">
+        <!-- first page -->
+        <section class="welcome-page" id="welcome-page">
             <h1>
                 JavaScript Fundamentals Quiz
             </h1>
@@ -23,6 +24,17 @@
                 for every answer you get wrong, you will lose 10 seconds of time.
                 Good luck!
             </p>
+            <button class = "start-btn" id="start-btn">Start Quiz</button>
+        </section>
+        <!-- quiz page -->
+        <section class = "quiz">
+            <div id="question"></div>
+            <div id="options">
+                <button id="option1"></button>
+                <button id="option2"></button>
+                <button id="option3"></button>
+                <button id="option4"></button>
+            </div>
         </section>
     </main>
     <script src= ./assets/js/script.js></script> </script>
