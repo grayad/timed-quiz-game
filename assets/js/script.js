@@ -8,7 +8,6 @@ var welcomePage = document.getElementById("welcome-page");
 var quizEl = document.getElementById("quiz-container");
 var questionEl = document.getElementById("question");
 var answerBtns = document.getElementById("option-buttons");
-var leaderboard = document.getElementById("scores");
 
 
 
@@ -115,13 +114,10 @@ function userPrompt () {
         name: userName,
         score: totalScore,
     }
-    localStorage.setItem("user", JSON.stringify(user));
-    var scoresList = localStorage.getItem("user");
-    scoresList = JSON.parse(scoresList);
-    var userLi = document.createElement("li").innerHTML=scoresList;
-    userLi.className="scores";
-    console.log(userLi);
-    leaderboard.append(userLi);
+    var allUsers = JSON.parse(localStorage.getItem("allUsers")) || [];
+    allUsers.push(user);
+    console.log(allUsers);
+    localStorage.setItem("allUsers", JSON.stringify(allUsers));
 }
 
 // startButton.onclick = function() {
