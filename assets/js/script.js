@@ -1,5 +1,5 @@
 var index = 0;
-var time = 60;
+var sec = 59;
 var score = 0;
 var timer;
 
@@ -8,6 +8,7 @@ var welcomePage = document.getElementById("welcome-page");
 var quizEl = document.getElementById("quiz-container");
 var questionEl = document.getElementById("question");
 var answerBtns = document.getElementById("option-buttons");
+var leaderboard = document.getElementById("scores");
 
 
 
@@ -88,10 +89,13 @@ function showQuestion(question) {
             if (answer.correct) {
                 score+=5,
                 console.log(score);
+                alert("Correct!");
+                
             }
             else {
-                time-=10,
+                sec-=10,
                 console.log(time);
+                alert("Wrong!");
             }
             if (index===4) {
                 userPrompt();
@@ -106,9 +110,37 @@ function showQuestion(question) {
 
 function userPrompt () {
     var totalScore=score;
-    var userName=window.prompt("All done! Your highscore is" + totalScore + "! Enter your name to save your score!");
+    var userName=window.prompt("All done! Your highscore is " + totalScore + " out of 25! Enter your name to save your score!");
+    var user = {
+        name: userName,
+        score: totalScore,
+    }
+    localStorage.setItem("user", JSON.stringify(user));
+    var scoresList = localStorage.getItem("user");
+    scoresList = JSON.parse(scoresList);
+    var userLi = document.createElement("li").innerHTML=scoresList;
+    userLi.className="scores";
+    console.log(userLi);
+    leaderboard.append(userLi);
 }
 
+// startButton.onclick = function() {
+function startTimer() {
+    var timer = setInterval(function () {
+        document.getElementById("time").innerHTML=sec;
+        sec--;
+        if (sec<-1) {
+            clearInterval(timer);
+            alert("Out of time!")
+            userPrompt();
+        }
+    }, 1000);
+}
+
+
+
 startButton.addEventListener("click", startGame);
+startButton.addEventListener("click", startTimer);
+
 
 

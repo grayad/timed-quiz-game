@@ -58,6 +58,19 @@ header {
     background-color: rgba(0, 0, 139, 0.496);
 }
 
+.leaderboard {
+    text-align: center;
+}
+
+.scores {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
 
 
 
