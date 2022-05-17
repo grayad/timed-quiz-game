@@ -1,14 +1,12 @@
-var leaderboard = document.getElementById("leaderboard");
+var leaderboard = document.getElementById("scoresList");
 
 var highScores = JSON.parse(localStorage.getItem("allUsers")) || [];
 console.log(highScores);
 for (var i=0; i < highScores.length; i++) {
-    var value = highScores.values(highScores[i]);
-    console.log(value);
-    var userLi = document.createElement("li").innerHTML=value;
+    var userLi = document.createElement("li").innerHTML=highScores[i].name + " - " + highScores[i].score + "    ;    ";
     userLi.className="scores";
     console.log(userLi);
-    leaderboard.append(userLi);
+    scoresList.append(userLi);
 }
 
 
