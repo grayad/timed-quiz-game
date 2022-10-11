@@ -13,7 +13,7 @@ header {
     padding: 1% 2%;
 }
 
-.content {
+main{
     border: solid 1px;
     padding: 20px;
     margin: 50px;
@@ -21,7 +21,7 @@ header {
     border-radius: 15px;
 }
 
-.welcome-page {
+.content {
     text-align: center;
 }
 
@@ -35,11 +35,6 @@ header {
 
 .options {
     padding: 15pxpx;
-}
-
-.leaderboard {
-    text-align: center;
-    font-size: 3rem;
 }
 
 .scores {
