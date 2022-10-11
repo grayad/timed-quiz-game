@@ -87,13 +87,10 @@ function showQuestion(question) {
         button.onclick = function() {
             if (answer.correct) {
                 score+=5,
-                console.log(score);
                 alert("Correct!");
-                
             }
             else {
                 sec-=10,
-                console.log(time);
                 alert("Wrong!");
             }
             if (index===4) {
@@ -102,7 +99,6 @@ function showQuestion(question) {
             }
             index++;
             startGame();
-            
         };
     });
 };
