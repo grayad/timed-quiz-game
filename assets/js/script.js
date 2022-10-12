@@ -60,6 +60,7 @@ var questions = [
     }
 ];
 
+// display the quiz and questions
 function startGame () {
     startButton.classList.add("hide");
     welcomePage.classList.add("hide");

@@ -25,7 +25,7 @@ header a, header p {
 }
 
 main{
-    border: dashed 1.5px;
+    border: dashed 1.8px;
     padding: 20px;
     margin: 50px;
     font-size: large;
@@ -46,7 +46,7 @@ main{
 }
 
 .options {
-    padding: 15pxpx;
+    padding: 15px;
 }
 
 .scores {
