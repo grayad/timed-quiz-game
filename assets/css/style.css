@@ -50,8 +50,8 @@ main{
 }
 
 .scores {
-    text-align: center;
     font-size: 2rem;
+    list-style-type: decimal;
 }
 
 /* Button CSS */
