@@ -8,5 +8,6 @@ highScores = highScores.sort((a, b) => (a.score < b.score ? 1 : -1));
 for (var i = 0; i < highScores.length; i++) {
   var userLi = (document.createElement("li").innerHTML =
     highScores[i].name + " - " + highScores[i].score + "    ;    ");
+
   scoreListEl.append(userLi);
 }

@@ -51,6 +51,8 @@ main{
 
 .scores {
     font-size: 2rem;
+    display: flex;
+    flex-direction: column;
     list-style-type: decimal;
 }
 
