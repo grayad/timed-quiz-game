@@ -51,9 +51,17 @@ main{
 
 .scores {
     font-size: 2rem;
+}
+
+.leaderboard {
     display: flex;
     flex-direction: column;
-    list-style-type: decimal;
+    align-items: center;
+}
+
+.leaderboard h1{
+    text-decoration: underline;
+    margin: 0;
 }
 
 /* Button CSS */
