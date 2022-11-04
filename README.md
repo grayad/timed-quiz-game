@@ -1,12 +1,12 @@
 # timed-quiz-game
 
 ## Purpose
-A website to quiz users on JavaScipt knowledge and save highscores to compare. 
+A website to quiz users on JavaScipt knowledge and save high scores to compare. 
 
 ## Built With
-*HTML
-*CSS
-*Javascript
+- HTML
+- CSS
+- Javascript
 
 ## Website
 https://grayad.github.io/timed-quiz-game/
